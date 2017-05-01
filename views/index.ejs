@@ -1,0 +1,43 @@
+<% include header %>
+
+
+<div class  = "jumbotron">
+    <div class = "container">
+        <div style= "display: inline-block">
+            <p>Add more Posts</p>
+        </div>
+        <div style= "display: inline-block">
+            <a href = "/blogs/new" class = "btn btn-primary">Add more </a>
+        </div>
+    </div>
+</div>
+
+
+<div class ="row text-center" style="display:flex; flex-wrap: wrap;">
+    <% data.forEach(function(val){ %> 
+            <div class = "col-xs-2">
+                <div class = " thumbnail">
+                    <img src = "<%= val.url %>" >
+                    <div class = "caption">
+                        <input type = "submit" class = "btn btn-primary btn-xs" value= "info....">
+                    </div>
+                </div>
+            </div>
+            
+            <div class  = "col-xs-10">
+                    <div class = "pull-left">
+                    <strong><%= val.title %> :</strong>
+                    </div>
+                    
+                <div class= "well">
+
+                    <div style = "margin: 0px; padding: 0px;">
+                    <p> <%= val.text %></p>
+                    </div>
+                </div>
+            </div>
+           
+    <% }); %> 
+    </div>
+
+<% include footer %>

@@ -1,0 +1,18 @@
+.images {
+    position: absolute;
+    width:100%;
+    height: 100%;
+    opacity:0.9;
+    background-image: url(https://images.unsplash.com/photo-1452274381522-521513015433?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&w=1080&fit=max&s=0a57c428b9ad4ee5966ae76df0a337f9);
+    background-size:cover;
+    background-repeat: no-repeat;
+    background-position:center;
+    margin-top:-20px;
+    text-align: center;
+}
+.inner-box{
+   margin-top: 150px;
+   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.55), 3px 3px 5px rgba(0, 0, 0, 0.2), 0px 0px 15px rgba(0,0,0,1);
+    color:white;
+    padding-bottom: 15px;
+}
